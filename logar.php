@@ -5,7 +5,7 @@ use Api\Boa\Check;
 use Api\Boa\Consultar;
 use Api\Boa\utils\Util;
 
-require_once 'vendor/autoload.php';
+require(dirname(__FILE__).'/vendor/autoload.php');
 
 $logar = new Logar();
 

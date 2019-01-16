@@ -6,7 +6,7 @@ use Api\Boa\Check;
 use Api\Boa\Consultar;
 use Api\Boa\utils\Util;
 
-require('vendor/autoload.php');
+require(dirname(__FILE__).'/vendor/autoload.php');
 $user = 'root';
 $password = '2019maconhaOk@@';
 $dsn = "mysql:host=127.0.0.1;dbname=api_boa";

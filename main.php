@@ -6,7 +6,8 @@ use Api\Boa\Check;
 use Api\Boa\Consultar;
 use Api\Boa\utils\Util;
 
-require('vendor/autoload.php');
+require(dirname(__FILE__).'/vendor/autoload.php');
+
 $user = 'root';
 $password = '2019maconhaOk@@';
 $dsn = "mysql:host=127.0.0.1;dbname=api_boa";
@@ -52,19 +53,20 @@ foreach ($result as $row) {
     $senha = $row->senha;
     $proxy = $row->proxy;
     $start = $row->start;
+    $cookie = $row->cookie;
 
 	if(strlen($proxy) < 5) {
 		$proxy = getProxy();
 	}
 
 	if(strlen($cookie) > 5) {
-
+		echo "\ntem cookie, .....";
 		$check = new Check();
 		$check->setcookie($cookie);
 		$check->setProxy($proxy);
 		$run = $check->run();
 
-		if($run == true){
+		if($run === true){
 
 			echo "\n##### Cookie online >>>> ", $usuario, PHP_EOL;
 			$result = $database->query('UPDATE contas SET', [
