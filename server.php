@@ -14,7 +14,7 @@ use React\EventLoop\Timer\Timer;
 require(dirname(__FILE__).'/vendor/autoload.php');
 
 $user     = 'root';
-$password = '2019maconhaOk@@';
+$password = '153356';
 $dsn      = "mysql:host=127.0.0.1;dbname=api_boa";
 $database = new Connection($dsn, $user, $password);
 
@@ -48,20 +48,8 @@ function runPayload($payload) {
 		$deferred->resolve($result);
 	});
 
-
 	return $deferred->promise();
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //add periodic time que verifica os proxys, em arquivo separado. ->

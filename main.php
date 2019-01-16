@@ -9,7 +9,7 @@ use Api\Boa\utils\Util;
 require(dirname(__FILE__).'/vendor/autoload.php');
 
 $user = 'root';
-$password = '2019maconhaOk@@';
+$password = '153356';
 $dsn = "mysql:host=127.0.0.1;dbname=api_boa";
 $database = new Nette\Database\Connection($dsn, $user, $password); // the same arguments as uses PDO
 
