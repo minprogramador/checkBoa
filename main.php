@@ -6,8 +6,6 @@ use Api\Boa\Check;
 use Api\Boa\Consultar;
 use Api\Boa\utils\Util;
 
-
-
 require('vendor/autoload.php');
 $user = 'root';
 $password = '2019maconhaOk@@';

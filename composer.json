@@ -11,7 +11,9 @@
 	],
 	"require": {
 		"php": ">=7.0.1",
-		"nette/database": "^2.4"
+		"nette/database": "^2.4",
+		"legionth/http-rest": "^0.2",
+		"react/child-process": "^0.6.0"
 	},
 	"autoload": {
 		"psr-4": {
