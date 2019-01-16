@@ -13,10 +13,12 @@ use React\EventLoop\Timer\Timer;
 
 require(dirname(__FILE__).'/vendor/autoload.php');
 
-$user     = 'root';
-$password = '153356';
-$dsn      = "mysql:host=127.0.0.1;dbname=api_boa";
-$database = new Connection($dsn, $user, $password);
+$user = 'Fd0teRws8L';
+$password = 'rUccClfdm2';
+$mysqlsv = 'remotemysql.com';
+$mysqlbd = 'Fd0teRws8L';
+$dsn = "mysql:host={$mysqlsv};dbname={$mysqlbd}";
+$database = new Nette\Database\Connection($dsn, $user, $password);
 
 $loop   = Factory::create();
 $server = new ServerRest();
